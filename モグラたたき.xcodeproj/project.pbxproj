@@ -13,6 +13,25 @@
 		2D6D1FA41B3AD7760025A06D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6D1FA31B3AD7760025A06D /* Images.xcassets */; };
 		2D6D1FA71B3AD7760025A06D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D6D1FA51B3AD7760025A06D /* LaunchScreen.xib */; };
 		2D6D1FB31B3AD7760025A06D /* _______Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D1FB21B3AD7760025A06D /* _______Tests.swift */; };
+		2D6D1FBE1B3AD9AA0025A06D /* ring.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6D1FBC1B3AD9AA0025A06D /* ring.png */; };
+		2D6D1FBF1B3AD9AA0025A06D /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D6D1FBD1B3AD9AA0025A06D /* back.jpg */; };
+		2D6D1FC11B3ADADA0025A06D /* mogura.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6D1FC01B3ADADA0025A06D /* mogura.png */; };
+		2D6D1FC31B3ADBAB0025A06D /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D6D1FC21B3ADBAB0025A06D /* button.png */; };
+		2D6D1FCC1B3B5B380025A06D /* pianoA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6D1FC41B3B5B380025A06D /* pianoA.mp3 */; };
+		2D6D1FCD1B3B5B380025A06D /* pianoB.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6D1FC51B3B5B380025A06D /* pianoB.mp3 */; };
+		2D6D1FCE1B3B5B380025A06D /* pianoC.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6D1FC61B3B5B380025A06D /* pianoC.mp3 */; };
+		2D6D1FCF1B3B5B380025A06D /* pianoC2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6D1FC71B3B5B380025A06D /* pianoC2.mp3 */; };
+		2D6D1FD01B3B5B380025A06D /* pianoD.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6D1FC81B3B5B380025A06D /* pianoD.mp3 */; };
+		2D6D1FD11B3B5B380025A06D /* pianoE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6D1FC91B3B5B380025A06D /* pianoE.mp3 */; };
+		2D6D1FD21B3B5B380025A06D /* pianoF.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6D1FCA1B3B5B380025A06D /* pianoF.mp3 */; };
+		2D6D1FD31B3B5B380025A06D /* pianoG.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6D1FCB1B3B5B380025A06D /* pianoG.mp3 */; };
+		2D6D1FD51B3B5CBA0025A06D /* small_drum1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6D1FD41B3B5CBA0025A06D /* small_drum1.mp3 */; };
+		2D9C31611B3D5AFD00356BCE /* guitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D9C31601B3D5AFD00356BCE /* guitar.mp3 */; };
+		2D9C31631B3D634200356BCE /* flashing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D9C31621B3D634200356BCE /* flashing.mp3 */; };
+		2D9C31651B3D77B400356BCE /* cat1b.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D9C31641B3D77B400356BCE /* cat1b.mp3 */; };
+		2D9C31671B3D77CC00356BCE /* cat3b.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D9C31661B3D77CC00356BCE /* cat3b.mp3 */; };
+		2D9C31691B3D782800356BCE /* dog1b.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D9C31681B3D782800356BCE /* dog1b.mp3 */; };
+		2D9C316B1B3D7D3F00356BCE /* SourTennesseeRed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D9C316A1B3D7D3F00356BCE /* SourTennesseeRed.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +55,25 @@
 		2D6D1FAC1B3AD7760025A06D /* モグラたたきTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "モグラたたきTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6D1FB11B3AD7760025A06D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D6D1FB21B3AD7760025A06D /* _______Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_______Tests.swift"; sourceTree = "<group>"; };
+		2D6D1FBC1B3AD9AA0025A06D /* ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ring.png; sourceTree = "<group>"; };
+		2D6D1FBD1B3AD9AA0025A06D /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
+		2D6D1FC01B3ADADA0025A06D /* mogura.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mogura.png; sourceTree = "<group>"; };
+		2D6D1FC21B3ADBAB0025A06D /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		2D6D1FC41B3B5B380025A06D /* pianoA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pianoA.mp3; sourceTree = "<group>"; };
+		2D6D1FC51B3B5B380025A06D /* pianoB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pianoB.mp3; sourceTree = "<group>"; };
+		2D6D1FC61B3B5B380025A06D /* pianoC.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pianoC.mp3; sourceTree = "<group>"; };
+		2D6D1FC71B3B5B380025A06D /* pianoC2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pianoC2.mp3; sourceTree = "<group>"; };
+		2D6D1FC81B3B5B380025A06D /* pianoD.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pianoD.mp3; sourceTree = "<group>"; };
+		2D6D1FC91B3B5B380025A06D /* pianoE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pianoE.mp3; sourceTree = "<group>"; };
+		2D6D1FCA1B3B5B380025A06D /* pianoF.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pianoF.mp3; sourceTree = "<group>"; };
+		2D6D1FCB1B3B5B380025A06D /* pianoG.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pianoG.mp3; sourceTree = "<group>"; };
+		2D6D1FD41B3B5CBA0025A06D /* small_drum1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = small_drum1.mp3; sourceTree = "<group>"; };
+		2D9C31601B3D5AFD00356BCE /* guitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = guitar.mp3; sourceTree = "<group>"; };
+		2D9C31621B3D634200356BCE /* flashing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = flashing.mp3; sourceTree = "<group>"; };
+		2D9C31641B3D77B400356BCE /* cat1b.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cat1b.mp3; sourceTree = "<group>"; };
+		2D9C31661B3D77CC00356BCE /* cat3b.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cat3b.mp3; sourceTree = "<group>"; };
+		2D9C31681B3D782800356BCE /* dog1b.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dog1b.mp3; sourceTree = "<group>"; };
+		2D9C316A1B3D7D3F00356BCE /* SourTennesseeRed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SourTennesseeRed.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +97,25 @@
 		2D6D1F8E1B3AD7750025A06D = {
 			isa = PBXGroup;
 			children = (
+				2D9C316A1B3D7D3F00356BCE /* SourTennesseeRed.mp3 */,
+				2D9C31681B3D782800356BCE /* dog1b.mp3 */,
+				2D9C31641B3D77B400356BCE /* cat1b.mp3 */,
+				2D9C31661B3D77CC00356BCE /* cat3b.mp3 */,
+				2D9C31621B3D634200356BCE /* flashing.mp3 */,
+				2D9C31601B3D5AFD00356BCE /* guitar.mp3 */,
+				2D6D1FD41B3B5CBA0025A06D /* small_drum1.mp3 */,
+				2D6D1FC61B3B5B380025A06D /* pianoC.mp3 */,
+				2D6D1FC81B3B5B380025A06D /* pianoD.mp3 */,
+				2D6D1FC91B3B5B380025A06D /* pianoE.mp3 */,
+				2D6D1FCA1B3B5B380025A06D /* pianoF.mp3 */,
+				2D6D1FCB1B3B5B380025A06D /* pianoG.mp3 */,
+				2D6D1FC41B3B5B380025A06D /* pianoA.mp3 */,
+				2D6D1FC51B3B5B380025A06D /* pianoB.mp3 */,
+				2D6D1FC71B3B5B380025A06D /* pianoC2.mp3 */,
+				2D6D1FC21B3ADBAB0025A06D /* button.png */,
+				2D6D1FC01B3ADADA0025A06D /* mogura.png */,
+				2D6D1FBC1B3AD9AA0025A06D /* ring.png */,
+				2D6D1FBD1B3AD9AA0025A06D /* back.jpg */,
 				2D6D1F991B3AD7760025A06D /* モグラたたき */,
 				2D6D1FAF1B3AD7760025A06D /* モグラたたきTests */,
 				2D6D1F981B3AD7760025A06D /* Products */,
@@ -192,9 +249,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D9C31671B3D77CC00356BCE /* cat3b.mp3 in Resources */,
+				2D6D1FCE1B3B5B380025A06D /* pianoC.mp3 in Resources */,
+				2D6D1FCC1B3B5B380025A06D /* pianoA.mp3 in Resources */,
+				2D6D1FC31B3ADBAB0025A06D /* button.png in Resources */,
+				2D9C31691B3D782800356BCE /* dog1b.mp3 in Resources */,
+				2D6D1FCF1B3B5B380025A06D /* pianoC2.mp3 in Resources */,
+				2D9C316B1B3D7D3F00356BCE /* SourTennesseeRed.mp3 in Resources */,
 				2D6D1FA21B3AD7760025A06D /* Main.storyboard in Resources */,
+				2D6D1FD31B3B5B380025A06D /* pianoG.mp3 in Resources */,
+				2D6D1FD11B3B5B380025A06D /* pianoE.mp3 in Resources */,
+				2D6D1FBF1B3AD9AA0025A06D /* back.jpg in Resources */,
+				2D9C31651B3D77B400356BCE /* cat1b.mp3 in Resources */,
+				2D6D1FCD1B3B5B380025A06D /* pianoB.mp3 in Resources */,
 				2D6D1FA71B3AD7760025A06D /* LaunchScreen.xib in Resources */,
 				2D6D1FA41B3AD7760025A06D /* Images.xcassets in Resources */,
+				2D9C31611B3D5AFD00356BCE /* guitar.mp3 in Resources */,
+				2D6D1FC11B3ADADA0025A06D /* mogura.png in Resources */,
+				2D6D1FBE1B3AD9AA0025A06D /* ring.png in Resources */,
+				2D6D1FD01B3B5B380025A06D /* pianoD.mp3 in Resources */,
+				2D6D1FD51B3B5CBA0025A06D /* small_drum1.mp3 in Resources */,
+				2D9C31631B3D634200356BCE /* flashing.mp3 in Resources */,
+				2D6D1FD21B3B5B380025A06D /* pianoF.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +481,7 @@
 				2D6D1FB81B3AD7760025A06D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D6D1FB91B3AD7760025A06D /* Build configuration list for PBXNativeTarget "モグラたたきTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +490,7 @@
 				2D6D1FBB1B3AD7760025A06D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
