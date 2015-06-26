@@ -293,7 +293,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
     
     func music(timer : NSTimer){
         
-        
+                      
         
         arN = arN + 1
         if(array01[arN] == 0){
