@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 class ViewController: UIViewController,AVAudioPlayerDelegate {
-    var array01 : Array<Int> = [0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0]
+    var array01 : Array<Int> = [0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0]
     
     
     @IBOutlet var mogu1 : UIButton!
@@ -41,6 +41,17 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
     var buttonNumber = -1
     var arN = -1
     
+    
+    var m1 = 0
+    var m2 = 0
+    var m3 = 0
+    var m4 = 0
+    var m5 = 0
+    var m6 = 0
+    var m7 = 0
+    var m8 = 0
+    var m9 = 0
+    
     var myAudioPlayer1 : AVAudioPlayer!
     var myAudioPlayer2 : AVAudioPlayer!
     var myAudioPlayer3 : AVAudioPlayer!
@@ -55,39 +66,39 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
         super.viewDidLoad()
         
         //再生する音源のURLを生成.
-        var soundFilePath1 : NSString = NSBundle.mainBundle().pathForResource("dog1b", ofType: "mp3")!
+        var soundFilePath1 : NSString = NSBundle.mainBundle().pathForResource("pianoC", ofType: "mp3")!
         var fileURL1 : NSURL = NSURL(fileURLWithPath: soundFilePath1 as String)!
         myAudioPlayer1 = AVAudioPlayer(contentsOfURL: fileURL1, error: nil)
         
-        var soundFilePath2 : NSString = NSBundle.mainBundle().pathForResource("cat1b", ofType: "mp3")!
+        var soundFilePath2 : NSString = NSBundle.mainBundle().pathForResource("pianoD", ofType: "mp3")!
         var fileURL2 : NSURL = NSURL(fileURLWithPath: soundFilePath2 as String)!
         myAudioPlayer2 = AVAudioPlayer(contentsOfURL: fileURL2, error: nil)
         
-        var soundFilePath3 : NSString = NSBundle.mainBundle().pathForResource("cat3b", ofType: "mp3")!
+        var soundFilePath3 : NSString = NSBundle.mainBundle().pathForResource("pianoE", ofType: "mp3")!
         var fileURL3 : NSURL = NSURL(fileURLWithPath: soundFilePath3 as String)!
         myAudioPlayer3 = AVAudioPlayer(contentsOfURL: fileURL3, error: nil)
         
-        var soundFilePath4 : NSString = NSBundle.mainBundle().pathForResource("cat1b", ofType: "mp3")!
+        var soundFilePath4 : NSString = NSBundle.mainBundle().pathForResource("pianoF", ofType: "mp3")!
         var fileURL4 : NSURL = NSURL(fileURLWithPath: soundFilePath4 as String)!
         myAudioPlayer4 = AVAudioPlayer(contentsOfURL: fileURL4, error: nil)
         
-        var soundFilePath5 : NSString = NSBundle.mainBundle().pathForResource("dog1b", ofType: "mp3")!
+        var soundFilePath5 : NSString = NSBundle.mainBundle().pathForResource("pianoG", ofType: "mp3")!
         var fileURL5 : NSURL = NSURL(fileURLWithPath: soundFilePath5 as String)!
         myAudioPlayer5 = AVAudioPlayer(contentsOfURL: fileURL5, error: nil)
         
-        var soundFilePath6 : NSString = NSBundle.mainBundle().pathForResource("cat3b", ofType: "mp3")!
+        var soundFilePath6 : NSString = NSBundle.mainBundle().pathForResource("pianoA", ofType: "mp3")!
         var fileURL6 : NSURL = NSURL(fileURLWithPath: soundFilePath6 as String)!
         myAudioPlayer6 = AVAudioPlayer(contentsOfURL: fileURL6, error: nil)
         
-        var soundFilePath7 : NSString = NSBundle.mainBundle().pathForResource("cat3b", ofType: "mp3")!
+        var soundFilePath7 : NSString = NSBundle.mainBundle().pathForResource("pianoB", ofType: "mp3")!
         var fileURL7 : NSURL = NSURL(fileURLWithPath: soundFilePath7 as String)!
         myAudioPlayer7 = AVAudioPlayer(contentsOfURL: fileURL7, error: nil)
         
-        var soundFilePath8 : NSString = NSBundle.mainBundle().pathForResource("cat1b", ofType: "mp3")!
+        var soundFilePath8 : NSString = NSBundle.mainBundle().pathForResource("pianoC2", ofType: "mp3")!
         var fileURL8 : NSURL = NSURL(fileURLWithPath: soundFilePath8 as String)!
         myAudioPlayer8 = AVAudioPlayer(contentsOfURL: fileURL8, error: nil)
         
-        var soundFilePath9 : NSString = NSBundle.mainBundle().pathForResource("dog1b", ofType: "mp3")!
+        var soundFilePath9 : NSString = NSBundle.mainBundle().pathForResource("flashing", ofType: "mp3")!
         var fileURL9 : NSURL = NSURL(fileURLWithPath: soundFilePath9 as String)!
         myAudioPlayer9 = AVAudioPlayer(contentsOfURL: fileURL9, error: nil)
         
@@ -138,14 +149,15 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
         buttonNumber = 0
         score = 0
         scoreLabel.text = ""
-        array01 = [0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0]
+   array01 = [0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,0 , 0 , 0 , 01231]
         startButton.hidden = true
         startButtonBack.hidden = true
         number = 20
+        
         timer1 = NSTimer.scheduledTimerWithTimeInterval(4, target: self, selector: "onUpdate1:", userInfo: nil, repeats: true)
         timer2 = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "onUpdate2:", userInfo: nil, repeats: true)
         timer3 = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "onUpdate3:", userInfo: nil, repeats: true)
-        timer4 = NSTimer.scheduledTimerWithTimeInterval(4, target: self, selector: "onUpdate4:", userInfo: nil, repeats: true)
+        timer4 = NSTimer.scheduledTimerWithTimeInterval(6, target: self, selector: "onUpdate4:", userInfo: nil, repeats: true)
         timer5 = NSTimer.scheduledTimerWithTimeInterval(7, target: self, selector: "onUpdate5:", userInfo: nil, repeats: true)
         timer6 = NSTimer.scheduledTimerWithTimeInterval(7, target: self, selector: "onUpdate6:", userInfo: nil, repeats: true)
         timer7 = NSTimer.scheduledTimerWithTimeInterval(8, target: self, selector: "onUpdate7:", userInfo: nil, repeats: true)
@@ -158,32 +170,245 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
         
     }
     func onUpdate1(timer : NSTimer){
+        
         mogu1.hidden = false
+        m1 = 1
+        
+        if(m1 == 1 && m2 == 1 && m3 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー1")
+        }
+        if(m1 == 1 && m4 == 1 && m7 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー2")
+        }
+        if(m3 == 1 && m6 == 1 && m9 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー3")
+        }
+        if(m7 == 1 && m8 == 1 && m3 == 9){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー4")
+        }
     }
+    
+    
     func onUpdate2(timer : NSTimer){
         mogu2.hidden = false
+        m2 = 1
+        if(m1 == 1 && m2 == 1 && m3 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー1")
+        }
+        if(m1 == 1 && m4 == 1 && m7 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー2")
+        }
+        if(m3 == 1 && m6 == 1 && m9 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー3")
+        }
+        if(m7 == 1 && m8 == 1 && m3 == 9){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー4")
+        }
+
     }
     func onUpdate3(timer : NSTimer){
         mogu3.hidden = false
+        m3 = 1
+        if(m1 == 1 && m2 == 1 && m3 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー1")
+        }
+        if(m1 == 1 && m4 == 1 && m7 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー2")
+        }
+        if(m3 == 1 && m6 == 1 && m9 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー3")
+        }
+        if(m7 == 1 && m8 == 1 && m3 == 9){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー4")
+        }
+
     }
     func onUpdate4(timer : NSTimer){
         mogu4.hidden = false
+        m4 = 1
+        if(m1 == 1 && m2 == 1 && m3 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー1")
+        }
+        if(m1 == 1 && m4 == 1 && m7 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー2")
+        }
+        if(m3 == 1 && m6 == 1 && m9 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー3")
+        }
+        if(m7 == 1 && m8 == 1 && m3 == 9){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー4")
+        }
+
     }
     func onUpdate5(timer : NSTimer){
         mogu5.hidden = false
+        m5 = 1
+        if(m1 == 1 && m2 == 1 && m3 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー1")
+        }
+        if(m1 == 1 && m4 == 1 && m7 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー2")
+        }
+        if(m3 == 1 && m6 == 1 && m9 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー3")
+        }
+        if(m7 == 1 && m8 == 1 && m3 == 9){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー4")
+        }
+
     }
     func onUpdate6(timer : NSTimer){
         mogu6.hidden = false
+        m6 = 1
+        if(m1 == 1 && m2 == 1 && m3 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー1")
+        }
+        if(m1 == 1 && m4 == 1 && m7 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー2")
+        }
+        if(m3 == 1 && m6 == 1 && m9 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー3")
+        }
+        if(m7 == 1 && m8 == 1 && m3 == 9){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー4")
+        }
+
     }
     func onUpdate7(timer : NSTimer){
         mogu7.hidden = false
+        m7 = 1
+        if(m1 == 1 && m2 == 1 && m3 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー1")
+        }
+        if(m1 == 1 && m4 == 1 && m7 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー2")
+        }
+        if(m3 == 1 && m6 == 1 && m9 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー3")
+        }
+        if(m7 == 1 && m8 == 1 && m3 == 9){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー4")
+        }
+
     }
     func onUpdate8(timer : NSTimer){
         mogu8.hidden = false
+        m8 = 1
+        if(m1 == 1 && m2 == 1 && m3 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー1")
+        }
+        if(m1 == 1 && m4 == 1 && m7 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー2")
+        }
+        if(m3 == 1 && m6 == 1 && m9 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー3")
+        }
+        if(m7 == 1 && m8 == 1 && m3 == 9){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー4")
+        }
+
     }
     func onUpdate9(timer : NSTimer){
         mogu9.hidden = false
+        m9 = 1
+        if(m1 == 1 && m2 == 1 && m3 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー1")
+        }
+        if(m1 == 1 && m4 == 1 && m7 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー2")
+        }
+        if(m3 == 1 && m6 == 1 && m9 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー3")
+        }
+        if(m7 == 1 && m8 == 1 && m9 == 1){
+            NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "gameOver:", userInfo: nil, repeats: false)
+            NSLog("ハロー4")
+        }
+
     }
+    
+    
+    
+    
+    func gameOver(timer : NSTimer){
+        startButton.hidden = false
+        startButtonBack.hidden = false
+        stopTimer.invalidate()
+        timer1.invalidate()
+        timer2.invalidate()
+        timer3.invalidate()
+        timer4.invalidate()
+        timer5.invalidate()
+        timer6.invalidate()
+        timer7.invalidate()
+        timer8.invalidate()
+        timer9.invalidate()
+        mogu1.hidden = true
+        mogu2.hidden = true
+        mogu3.hidden = true
+        mogu4.hidden = true
+        mogu5.hidden = true
+        mogu6.hidden = true
+        mogu7.hidden = true
+        mogu8.hidden = true
+        mogu9.hidden = true
+        
+        m1 = 0
+        m2 = 0
+        m3 = 0
+        m4 = 0
+        m5 = 0
+        m6 = 0
+        m7 = 0
+        m8 = 0
+        m9 = 0
+        scoreLabel.text = String(score)
+        finishLabel.text = "終わり"
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
     func stopTimer(timer : NSTimer){
         
         number = number - 1
@@ -211,6 +436,15 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
             mogu7.hidden = true
             mogu8.hidden = true
             mogu9.hidden = true
+            m1 = 0
+            m2 = 0
+            m3 = 0
+            m4 = 0
+            m5 = 0
+            m6 = 0
+            m7 = 0
+            m8 = 0
+            m9 = 0
             scoreLabel.text = String(score)
             finishLabel.text = "おわり"
             
@@ -220,6 +454,9 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
     
     
     @IBAction func b1(){
+
+        
+        m1 = 0
         buttonNumber = buttonNumber + 1
         array01[buttonNumber] = 1
         mogu1.hidden = true
@@ -227,6 +464,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
         myAudioPlayer1.play()
     }
     @IBAction func b2(){
+        m2 = 0
         buttonNumber = buttonNumber + 1
         array01[buttonNumber] = 2
         mogu2.hidden = true
@@ -234,6 +472,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
         myAudioPlayer2.play()
     }
     @IBAction func b3(){
+        m3 = 0
         buttonNumber = buttonNumber + 1
         array01[buttonNumber] = 3
         
@@ -242,6 +481,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
         myAudioPlayer3.play()
     }
     @IBAction func b4(){
+        m4 = 0
         buttonNumber = buttonNumber + 1
         array01[buttonNumber] = 4
         mogu4.hidden = true
@@ -249,6 +489,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
         myAudioPlayer4.play()
     }
     @IBAction func b5(){
+        m5 = 0
         buttonNumber = buttonNumber + 1
         array01[buttonNumber] = 5
         mogu5.hidden = true
@@ -256,6 +497,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
         myAudioPlayer5.play()
     }
     @IBAction func b6(){
+        m6 = 0
         buttonNumber = buttonNumber + 1
         array01[buttonNumber] = 6
         mogu6.hidden = true
@@ -263,6 +505,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
         myAudioPlayer6.play()
     }
     @IBAction func b7(){
+        m7 = 0
         buttonNumber = buttonNumber + 1
         array01[buttonNumber] = 7
         mogu7.hidden = true
@@ -270,6 +513,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
         myAudioPlayer7.play()
     }
     @IBAction func b8(){
+        m8 = 0
         buttonNumber = buttonNumber + 1
         array01[buttonNumber] = 8
         mogu8.hidden = true
@@ -277,6 +521,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
         myAudioPlayer8.play()
     }
     @IBAction func b9(){
+        m9 = 0
         buttonNumber = buttonNumber + 1
         array01[buttonNumber] = 9
         mogu9.hidden = true
@@ -287,7 +532,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
     @IBAction func musicStart(){
 //        myAudioPlayer10.play()
         arN = 0
-        musicTimer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "music:", userInfo: nil, repeats: true)
+        musicTimer = NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "music:", userInfo: nil, repeats: true)
         
     }
     
