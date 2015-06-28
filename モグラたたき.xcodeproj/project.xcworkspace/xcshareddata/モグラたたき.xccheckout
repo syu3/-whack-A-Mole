@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F76DA1BE-AC54-4AA9-8813-5CAD7BB2CC7F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>モグラたたき</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>488BA2FC715C8941E1435EB977D1C073EB687B3A</key>
+		<string>https://github.com/syu3/-whack-A-Mole.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>モグラたたき.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>488BA2FC715C8941E1435EB977D1C073EB687B3A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/syu3/-whack-A-Mole.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>488BA2FC715C8941E1435EB977D1C073EB687B3A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>488BA2FC715C8941E1435EB977D1C073EB687B3A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>%E3%83%A2%E3%82%AF%E3%82%99%E3%83%A9%E3%81%9F%E3%81%9F%E3%81%8D</string>
+		</dict>
+	</array>
+</dict>
+</plist>
